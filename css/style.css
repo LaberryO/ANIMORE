@@ -10,6 +10,13 @@ li {
     list-style-type: none;
 }
 
+.line {
+    height: 0;
+    width: 100%;
+
+    border: 1px solid black;
+}
+
 nav {
     width: 100%;
     margin-top: -100px;
@@ -103,6 +110,8 @@ nav .menu {
 
 .slide .inner_text {
     height: 20%;
+    font-size: 16px;
+    text-align: center;
 }
 
 .arrow>img {
@@ -134,8 +143,106 @@ nav .menu {
     transform: translateY(-50%) scale(-1.2, 1.2);
 }
 
+#sl-co {
+    margin: 1rem 0;
+}
+
 .contents {
-    height: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contents>div {
+    width: 33%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+
+.contents_btn {
+    cursor: pointer;
+    width: 25%;
+    height: 35px;
+    border: 2px solid black;
+    border-bottom: 0;
+    border-radius: 5px 5px 0 0;
+    background-color: #dddddd;
+}
+
+.contents_btn:hover {
+    background-color: #ccc;
+}
+
+.inner_contents {
+    border: 2px solid black;
+    height: 365px;
+    padding: 10px 15px;
+}
+
+.inner_contents>ul>li {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+}
+
+.inner_contents>ul>li:hover>.left_li {
+    font-weight: bold;
+}
+
+.inner_contents>ul>li>.right_li {
+    color: gray;
+}
+
+.shortcut>.inner_contents {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.shortcut>.inner_contents>div {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.shortcut>.inner_contents>div>.upper_contents {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shortcut>.inner_contents>div>.upper_contents>img {
+    width: 70%;
+    object-fit: contain;
+}
+
+.shortcut>.inner_contents>div>.lower_contents {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+}
+
+.shortcut>.inner_contents>div:hover {
+    border: 2px solid black;
+}
+
+.shortcut>.inner_contents>div:hover>.lower_contents {
+    font-weight: bold;
+}
+
+.github {
+    /* display: flex; */
 }
 
 .petstagram {

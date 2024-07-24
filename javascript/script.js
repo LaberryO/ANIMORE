@@ -39,6 +39,10 @@ $(".right").click(() => {
     }
 });
 
+$(".github").click(() => {
+    window.open("https://github.com/LaberryO/ANIMORE", "_blank");
+});
+
 
 
 
